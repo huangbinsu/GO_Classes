@@ -7,7 +7,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func api() {
+// 1. TODO CRUD
+//-- POST create / new task 					http://127.0.0.1:800/todo/add
+//-- GET read list / filter Done or Not			http://127.0.0.1:800/todo/show?status=true or http://127.0.0.1:800/todo/show?name={name}
+//-- PUT update / mark task as done or not		http://127.0.0.1:800/todo/update/{name}?status=true
+//-- DELETE delete / delete todo				http://127.0.0.1:800/todo/del/{name}
+
+func cls02_hw() {
 	var toDoMap []ToDo
 	toDoMap = append(toDoMap, ToDo{Task: "Sample", Done: false})
 	r := gin.Default()
